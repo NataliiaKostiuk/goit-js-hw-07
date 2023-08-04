@@ -14,16 +14,10 @@ function getGalleryCard(arr) {
 }
 container.insertAdjacentHTML('beforeend', getGalleryCard(galleryItems));
 
-container.addEventListener('click', onclick);
-function onclick(evt){
-   evt.preventDefault();
-    if (evt.target === evt.currentTarget) {
-        return
-    } 
+
 
     const openingModal = new SimpleLightbox('.gallery a', { 
         captionDelay: 250,
         captionsData: 'alt',
        
     });
-}
